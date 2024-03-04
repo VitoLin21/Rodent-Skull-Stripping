@@ -1,6 +1,6 @@
 # Model Overview
 
-This repository contains the code for RSS-Net for the task of rodent skull stripping
+This repository contains the RSS-Net framework for the task of rodent MRI skull stripping
 
 # Installing Dependencies
 
