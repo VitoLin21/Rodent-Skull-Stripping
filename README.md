@@ -4,12 +4,14 @@ This repository contains the code for RSS-Net for the task of rodent skull strip
 
 # Installing Dependencies
 
-Our framework is developed based on [PyTorch 2.0.0](https://pytorch.org/), [MONAI](https://monai.io/), and [nnUNet](https://github.com/MIC-DKFZ/nnUNet). 
+Our framework is developed based on Python 3.9, [PyTorch 2.0.0](https://pytorch.org/), [MONAI](https://monai.io/), and [nnUNet](https://github.com/MIC-DKFZ/nnUNet). 
 
 Dependencies can be installed using:
 
 ``` bash
-conda create
+conda create -n rss python=3.9
+
+conda activate rss
 
 # CUDA 11.7
 conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 -c pytorch -c nvidia
