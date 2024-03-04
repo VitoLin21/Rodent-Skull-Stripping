@@ -88,10 +88,11 @@ After the installation is complete, you can use the following command to run the
 We recommend using absolute paths for better accuracy
 
 To meet the required naming format, ensure that your input files are organized as follows:
-
+```bash
 |input_folder_path
 |---- <file-name1>_0000.nii.gz
 |---- <file-name2>_0000.nii.gz
+```
 
 # Comand Parameters
 Here are the parameters for the RS2_predict script in Markdown format:
