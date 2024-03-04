@@ -1,0 +1,272 @@
+{
+  "dataset_name": "Dataset002_RatsBarin",
+  "plans_name": "nnUNetPlans",
+  "original_median_spacing_after_transp": [
+    0.25,
+    0.20000000298023224,
+    0.1599999964237213
+  ],
+  "original_median_shape_after_transp": [
+    128,
+    96,
+    180
+  ],
+  "image_reader_writer": "SimpleITKIO",
+  "transpose_forward": [
+    1,
+    0,
+    2
+  ],
+  "transpose_backward": [
+    1,
+    0,
+    2
+  ],
+  "configurations": {
+    "2d": {
+      "data_identifier": "nnUNetPlans_2d",
+      "preprocessor_name": "DefaultPreprocessor",
+      "batch_size": 169,
+      "patch_size": [
+        112,
+        176
+      ],
+      "median_image_size_in_voxels": [
+        99.0,
+        175.0
+      ],
+      "spacing": [
+        0.20000000298023224,
+        0.1599999964237213
+      ],
+      "normalization_schemes": [
+        "ZScoreNormalization"
+      ],
+      "use_mask_for_norm": [
+        false
+      ],
+      "UNet_class_name": "PlainConvUNet",
+      "UNet_base_num_features": 32,
+      "n_conv_per_stage_encoder": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n_conv_per_stage_decoder": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "num_pool_per_axis": [
+        4,
+        4
+      ],
+      "pool_op_kernel_sizes": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "conv_kernel_sizes": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "unet_max_num_features": 512,
+      "resampling_fn": "resample_data_or_seg_to_shape",
+      "resampling_fn": "resample_data_or_seg_to_shape",
+      "resampling_fn_kwargs": {
+        "is_seg": false,
+        "order": 3,
+        "order_z": 0,
+        "force_separate_z": null
+      },
+      "resampling_fn_kwargs": {
+        "is_seg": true,
+        "order": 1,
+        "order_z": 0,
+        "force_separate_z": null
+      },
+      "resampling_fn": "resample_data_or_seg_to_shape",
+      "resampling_fn_kwargs": {
+        "is_seg": false,
+        "order": 1,
+        "order_z": 0,
+        "force_separate_z": null
+      },
+      "batch_dice": true
+    },
+    "3d_fullres": {
+      "data_identifier": "nnUNetPlans_3d_fullres",
+      "preprocessor_name": "DefaultPreprocessor",
+      "batch_size": 2,
+      "patch_size": [
+        128,
+        128,
+        160
+      ],
+      "median_image_size_in_voxels": [
+        102.0,
+        99.0,
+        175.0
+      ],
+      "spacing": [
+        0.25,
+        0.20000000298023224,
+        0.1599999964237213
+      ],
+      "normalization_schemes": [
+        "ZScoreNormalization"
+      ],
+      "use_mask_for_norm": [
+        false
+      ],
+      "UNet_class_name": "PlainConvUNet",
+      "UNet_base_num_features": 32,
+      "n_conv_per_stage_encoder": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n_conv_per_stage_decoder": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "num_pool_per_axis": [
+        4,
+        4,
+        4
+      ],
+      "pool_op_kernel_sizes": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "conv_kernel_sizes": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "unet_max_num_features": 320,
+      "resampling_fn": "resample_data_or_seg_to_shape",
+      "resampling_fn": "resample_data_or_seg_to_shape",
+      "resampling_fn_kwargs": {
+        "is_seg": false,
+        "order": 3,
+        "order_z": 0,
+        "force_separate_z": null
+      },
+      "resampling_fn_kwargs": {
+        "is_seg": true,
+        "order": 1,
+        "order_z": 0,
+        "force_separate_z": null
+      },
+      "resampling_fn": "resample_data_or_seg_to_shape",
+      "resampling_fn_kwargs": {
+        "is_seg": false,
+        "order": 1,
+        "order_z": 0,
+        "force_separate_z": null
+      },
+      "batch_dice": false
+    }
+  },
+  "experiment_planner_used": "ExperimentPlanner",
+  "label_manager": "LabelManager",
+  "foreground_intensity_properties_per_channel": {
+    "0": {
+      "max": 92104624.0,
+      "mean": 244455.0,
+      "median": 2503.0,
+      "min": -188.3494873046875,
+      "percentile_00_5": -0.27447192385792735,
+      "percentile_99_5": 9091058.00999999,
+      "std": 1558281.25
+    }
+  }
+}
