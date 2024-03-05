@@ -87,7 +87,7 @@ After the installation is complete, you can use the following command to run the
  RS2_predict -i 'path/to/input' -o 'path/to/output' -m 'path/to/pretrained_model.pt'
 ```
 
-We recommend using absolute paths for better accuracy
+We recommend using absolute paths to avoid unnecessary problem.
 
 To meet the required naming format, ensure that your input files are organized as follows:
 ```bash
