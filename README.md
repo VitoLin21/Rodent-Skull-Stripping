@@ -30,7 +30,7 @@ python setup.py install
 
 Our network architecture is illustrated in the following diagram:
 
-![Network Architecture](./assets/RSS.png)
+![Network Architecture](./assets/RSS2.png)
 
 
 # Data Description
