@@ -114,7 +114,7 @@ def predict_from_raw_data(list_of_lists_or_source_folder: Union[str, List[List[s
                           part_id: int = 0,
                           device: torch.device = torch.device('cuda')):
     if device.type == 'cuda':
-        device = torch.device(type='cuda', index=1)  # set the desired GPU with CUDA_VISIBLE_DEVICES!
+        device = torch.device(type='cuda', index=0)  # set the desired GPU with CUDA_VISIBLE_DEVICES!
 
     if device.type != 'cuda':
         perform_everything_on_gpu = False

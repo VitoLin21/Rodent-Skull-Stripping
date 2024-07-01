@@ -1,6 +1,6 @@
 # Model Overview
 
-This repository contains the code for RSS-Net for the task of rodent skull stripping
+This repository contains the RSS-Net framework for the task of rodent MRI skull stripping
 
 # Installing Dependencies
 
@@ -35,7 +35,9 @@ Our network architecture is illustrated in the following diagram:
 
 # Data Description
 
-We trained the model using MRI data from rodent brains collected from 89 centers. You can download the pre-trained model files and the annotated brain masks [Google Drive](https://drive.google.com/drive/folders/1cTlFFGL9iTUoZOT5Rgqi2ZAyqyPlXYd-).
+We trained the model using MRI data from rodent brains collected from 89 centers. You can download the pre-trained model files and the annotated brain masks [Google Drive](https://drive.google.com/drive/folders/1cTlFFGL9iTUoZOT5Rgqi2ZAyqyPlXYd-) or [MEGA](https://mega.nz/folder/q8tgWZbQ#QWvYSDmONS-KWxs5k5ax9Q).
+
+You can find the download links for these datasets in our article (***in submission***)
 
 | Dataset           |          | MultiRat | StdRat | C Rat | TRat  | C Mouse | NeAt        |
 |-------------------|----------|----------|--------|-------|-------|---------|-------------|
@@ -87,7 +89,7 @@ After the installation is complete, you can use the following command to run the
  RS2_predict -i 'path/to/input' -o 'path/to/output' -m 'path/to/pretrained_model.pt'
 ```
 
-We recommend using absolute paths for better accuracy
+We recommend using absolute paths to avoid unnecessary problem.
 
 To meet the required naming format, ensure that your input files are organized as follows:
 ```bash
@@ -122,3 +124,10 @@ Here are the parameters for the RS2_predict script in Markdown format:
 
 - **-nps**: Number of processes used for segmentation export. More is not always better. Beware of out-of-RAM issues. Default: 3.
 
+
+# Citation
+If you find this repository useful, please consider citing our paper:
+
+```
+Will be updated after the publication of the paper.
+```
