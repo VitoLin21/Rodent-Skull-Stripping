@@ -129,5 +129,13 @@ Here are the parameters for the RS2_predict script in Markdown format:
 If you find this repository useful, please consider citing our paper:
 
 ```
-Will be updated after the publication of the paper.
+@article{lin2024rs2,
+  title={RS2-Net: An end-to-end deep learning framework for rodent skull stripping in multi-center brain MRI},
+  author={Lin, Yongkang and Ding, Yanhui and Chang, Shulei and Ge, Xinting and Sui, Xiaodan and Jiang, Yanyun},
+  journal={NeuroImage},
+  volume={298},
+  pages={120769},
+  year={2024},
+  publisher={Elsevier}
+}
 ```
