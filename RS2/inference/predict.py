@@ -73,7 +73,9 @@ def load_what_we_need(checkpoint_name):
     plans = load_json(join(RS2.__path__[0], 'jsons/plans.json'))
     plans_manager = PlansManager(plans)
 
-    checkpoint = torch.load(checkpoint_name)
+    # 2024/11/20 update
+    # use cpu to load the model
+    checkpoint = torch.load(checkpoint_name, map_location=torch.device('cpu'))
     parameters = checkpoint['state_dict']
     configuration_manager = plans_manager.get_configuration('3d_fullres')
 
