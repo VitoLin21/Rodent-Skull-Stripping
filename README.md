@@ -98,6 +98,14 @@ To meet the required naming format, ensure that your input files are organized a
 |---- <file-name2>_0000.nii.gz
 ```
 
+# Additional Reminders
+1. In December 2024, the library "acvl_utils" was updated ([version 0.2.2](https://pypi.org/project/acvl-utils/#history)), which led to errors when used with Python 3.9([this issue](https://github.com/MIC-DKFZ/acvl_utils/issues/4)). Please install an earlier version of "acvl_utils", such as version 0.2.1.
+2. If you encounter the following problem when using it:
+`
+FileNotFoundError: [Errno 2] No such file or directory: 'your_conda_path/envs/rss/lib/python3.9/site-packages/RS2-1.0-py3.9.egg/RS2/jsons/dataset.json'
+`
+Please copy all the files from `"Rodent-Skull-Stripping/RS2/jsons"` to `"your_conda_path/envs/rss/lib/python3.9/site-packages/RS2-1.0-py3.9.egg/RS2/jsons"`. This should solve the problem. 
+
 # Comand Parameters
 Here are the parameters for the RS2_predict script in Markdown format:
 
