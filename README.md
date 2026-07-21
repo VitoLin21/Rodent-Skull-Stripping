@@ -37,7 +37,7 @@ Our network architecture is illustrated in the following diagram:
 
 We trained the model using MRI data from rodent brains collected from 89 centers. You can download the pre-trained model files and the annotated brain masks [Google Drive](https://drive.google.com/drive/folders/1cTlFFGL9iTUoZOT5Rgqi2ZAyqyPlXYd-) or [MEGA](https://mega.nz/folder/q8tgWZbQ#QWvYSDmONS-KWxs5k5ax9Q).
 
-You can find the download links for these datasets in our article (***in submission***)
+You can find the download links for these datasets in our article
 
 | Dataset           |          | MultiRat | StdRat | C Rat | TRat  | C Mouse | NeAt        |
 |-------------------|----------|----------|--------|-------|-------|---------|-------------|
