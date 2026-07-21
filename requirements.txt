@@ -2,7 +2,7 @@ nibabel>=3.1.1
 tqdm>=4.59.0
 einops>=0.4.1
 monai>=1.1.0
-acvl_utils>=0.2
+acvl_utils==0.2.1
 numpy>=1.23.3
 tifffile>=2022.10.10
 batchgenerators>=0.25
